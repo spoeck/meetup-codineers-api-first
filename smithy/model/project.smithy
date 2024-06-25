@@ -4,19 +4,6 @@ use aws.protocols#restJson1
 
 resource ProjectResource {
     identifiers: { projectId: String },
-    // properties : {
-    //     projectId: String
-	//     client: String
-    //     department: String
-    //     projectLeader: String
-    //     projectManager: String
-    //     startDate: String
-    //     endDate: String
-    // } 
-    // create: CreateProject,
-    // read: GetProject,
-    // update: UpdateProject,
-    // delete: DeleteProject,
     operations: [CreateProject, GetProject, UpdateProject, DeleteProject],
     list: ListProjects,
     collectionOperations: [ListProjects]
